@@ -60,6 +60,10 @@ def about():
 def use():
     return render_template("use.html")
 
+@app.route('/contact')
+def contact():
+    return render_template("contact.html")
+
 @app.route('/edit', methods=["GET", "POST"])
 def edit():
     if request.method == "POST":
