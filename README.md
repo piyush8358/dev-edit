@@ -4,7 +4,10 @@
 **Dev Edit** is a user-friendly online image processing tool that leverages HTML, CSS, JavaScript, Bootstrap, Flask, and OpenCV to empower you to enhance and modify your images effortlessly. With an intuitive interface and a variety of powerful image editing features, you can achieve professional results without any complex software.
 
 # Demo Video 
-https://github.com/piyush8358/dev-edit/assets/96904569/72ab3d68-0b2e-4e53-917c-218c15c59d13
+
+https://github.com/piyush8358/dev-edit/assets/96904569/3015d13d-5dd3-49fe-a382-85c659cdc371
+
+
 
 
 ## Features
