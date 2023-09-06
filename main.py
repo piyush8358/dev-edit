@@ -56,6 +56,10 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route('/use')
+def use():
+    return render_template("use.html")
+
 @app.route('/edit', methods=["GET", "POST"])
 def edit():
     if request.method == "POST":
