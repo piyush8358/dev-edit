@@ -3,100 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Edit - Online Image Processing Tool</title>
-    <!-- Link to your Bootstrap CSS file -->
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>How to Use Dev Edit</title>
     <style>
-        /* Your custom CSS styles can go here */
+        /* Global Styles */
         body {
-            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
+
         header {
-            background-color: #007bff;
+            background-color: #007BFF;
             color: #fff;
-            padding: 20px;
             text-align: center;
-        }
-        main {
-            max-width: 800px;
-            margin: 0 auto;
             padding: 20px;
         }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* Sections */
         section {
-            margin-bottom: 20px;
+            margin: 20px;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        ul, ol {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #007bff;
+            background-color: #007BFF;
             color: #fff;
+            padding: 20px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Dev Edit - Online Image Processing Tool</h1>
+        <h1>Welcome to Dev Edit</h1>
+        <p>Your Gateway to Effortless Image Enhancement</p>
     </header>
-    <main>
-        <section>
-            <h2>Features</h2>
-            <h3>1. Diverse Image Processing Options</h3>
+
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature">
+            <h3>Diverse Image Processing Options</h3>
             <ul>
-                <li><strong>Format Conversion:</strong> Seamlessly change your image format, including PNG, JPEG, Webp, and more.</li>
-                <li><strong>Grayscale Conversion:</strong> Effortlessly transform color images into grayscale with a single click.</li>
+                <li><strong>Format Conversion:</strong> Seamlessly switch between image formats such as PNG, JPEG, Webp, and more.</li>
+                <li><strong>Grayscale Conversion:</strong> Instantly transform color images into captivating grayscale compositions.</li>
             </ul>
-            <h3>2. User-Friendly Interface</h3>
+        </div>
+        <div class="feature">
+            <h3>User-Friendly Interface</h3>
             <ul>
-                <li><strong>Intuitive Editing:</strong> Easily navigate through the tool with a user-friendly interface suitable for everyone.</li>
-                <li><strong>Quick and Simple:</strong> Upload, process, and download your images in just a few straightforward steps.</li>
+                <li><strong>Intuitive Editing:</strong> Navigate effortlessly through our clean and user-friendly interface, designed to cater to all skill levels.</li>
+                <li><strong>Quick and Simple:</strong> Upload, process, and download your images in just a few simple steps.</li>
             </ul>
-            <h3>3. Instant Preview</h3>
+        </div>
+        <div class="feature">
+            <h3>Instant Preview</h3>
             <ul>
-                <li><strong>Real-Time Previews:</strong> Witness the results of your chosen image processing operation immediately and make adjustments as needed.</li>
+                <li><strong>Real-Time Previews:</strong> Witness the magic as your chosen image processing operation takes shape right before your eyes. Tweak until it's perfect.</li>
             </ul>
-            <h3>4. Convenience</h3>
+        </div>
+        <div class="feature">
+            <h3>Convenience</h3>
             <ul>
-                <li><strong>No Installation Required:</strong> Edit images without the hassle of installing software. Access Dev Edit from any device with an internet connection.</li>
+                <li><strong>No Installation Needed:</strong> Bid farewell to complicated software installations. Access <strong>Dev Edit</strong> from any device with an internet connection, and you're good to go.</li>
             </ul>
-        </section>
-        <section>
-            <h2>Technologies Used</h2>
-            <p>Dev Edit leverages the following technologies to provide a seamless user experience:</p>
-            <ul>
-                <li><strong>HTML:</strong> Lays the foundation for the web pages' structure and content.</li>
-                <li><strong>CSS:</strong> Styles the web pages, making them visually appealing and easy to use.</li>
-                <li><strong>JavaScript:</strong> Adds interactivity to the web pages, enabling real-time previews and user interactions.</li>
-                <li><strong>Bootstrap:</strong> A responsive front-end framework for creating visually appealing web interfaces.</li>
-                <li><strong>Flask:</strong> A web framework for Python that simplifies web development and handles server-side operations.</li>
-                <li><strong>OpenCV:</strong> A powerful library for computer vision tasks, utilized in this tool for image processing.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>How to Use</h2>
-            <ol>
-                <li>Access the web tool by clicking the "Launch Dev Edit" link below.</li>
-                <li>Select the "Edit" option in the navigation bar to enter the editing interface.</li>
-                <li>Upload an image file from your device using the file input.</li>
-                <li>Choose an image processing operation from the dropdown menu.</li>
-                <li>Click the "Submit" button to apply the chosen operation to your image.</li>
-                <li>Observe the processed image in real-time and download it once you're satisfied.</li>
-            </ol>
-        </section>
-        <section>
-            <h2>Advantages</h2>
-            <ul>
-                <li><strong>Accessibility:</strong> Edit your images online from anywhere, eliminating the need for specialized software or hardware.</li>
-                <li><strong>User-Friendly:</strong> Enjoy a straightforward user experience designed to make image editing effortless.</li>
-                <li><strong>Diverse Capabilities:</strong> Access a wide range of image processing options, from format conversion to grayscale transformation.</li>
-                <li><strong>Instant Preview:</strong> See the effect of your chosen operation in real-time and make adjustments as necessary.</li>
-            </ul>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="technologies">
+        <h2>Technologies Behind the Magic</h2>
+        <p><strong>Dev Edit</strong> thrives on cutting-edge technologies that ensure a seamless user experience:</p>
+        <ul>
+            <li><strong>HTML:</strong> Lays the foundation for structuring web pages.</li>
+            <li><strong>CSS:</strong> Styles the web pages, ensuring a visually appealing interface.</li>
+            <li><strong>JavaScript:</strong> Adds interactivity to the web pages, facilitating real-time previews and user interactions.</li>
+            <li><strong>Bootstrap:</strong> Empowers responsive and visually stunning web interfaces.</li>
+            <li><strong>Flask:</strong> A robust Python web framework that simplifies web development and handles server-side operations.</li>
+            <li><strong>OpenCV:</strong> A formidable computer vision library that enhances image processing capabilities within the tool.</li>
+        </ul>
+    </section>
+
+    <section id="getting-started">
+        <h2>Getting Started</h2>
+        <h3>Prerequisites</h3>
+        <ul>
+            <li>Python 3.x</li>
+            <li>Flask</li>
+            <li>OpenCV (cv2)</li>
+            <li>Werkzeug</li>
+            <li>img2pdf</li>
+            <li>Python-docx</li>
+            <li>Additional libraries as required (usually included in standard Python libraries)</li>
+        </ul>
+        <h3>Installation</h3>
+        <ol>
+            <li>Clone the repository to your local machine.
+                <pre><code>git clone https://github.com/piyush8358/dev-edit.git</code></pre>
+              <pre><code>cd dev-edit</code></pre>
+            </li>
+            <li>Install the required Python packages using <code>pip</code>.
+                <pre><code>pip install flask opencv-python-headless werkzeug img2pdf python-docx</code></pre>
+            </li>
+            <li>Start the Flask application.
+                <pre><code>python app.py</code></pre>
+            </li>
+            <li>Access <strong>Dev Edit</strong> by simply opening your web browser and heading to <a href="http://localhost:5000">http://localhost:5000</a>.</li>
+        </ol>
+    </section>
+
+    <section id="usage">
+        <h2>Usage</h2>
+        <ol>
+            <li><strong>Home Sweet Home:</strong> Upon entering the application, you'll find yourself on the welcoming home page, adorned with intuitive navigation links.</li>
+            <li><strong>Edit with Ease:</strong> Click on the "Edit" link in the navigation bar to enter the image editing realm.</li>
+            <li><strong>Select Your Canvas:</strong> Pick an image file (supported formats: webp, pdf, png, jpg, jpeg, word) by clicking the "Select an Image to Edit" button.</li>
+            <li><strong>Craft Your Masterpiece:</strong> Select an image editing operation from the dropdown menu. The options are vast:
+                <ul>
+                    <li>Convert to PNG</li>
+                    <li>Convert to Grayscale</li>
+                    <li>Convert to Webp</li>
+                    <li>Convert to PDF</li>
+                    <li>Convert to JPG</li>
+                    <li>Convert to JPEG</li>
+                    <li>Convert to Word</li>
+                </ul>
+            </li>
+            <li><strong>Manifest Your Vision:</strong> Click the "Submit" button to apply your selected operation to the image.</li>
+            <li><strong>Admire the Artistry:</strong> After the magic unfolds, you'll receive a success message with a link to download or view your edited image.</li>
+        </ol>
+    </section>
+
     <footer>
-        <p>Start enhancing and modifying your images today with Dev Edit. Discover the power of online image processing without the complexity!</p>
+        <p>Are you ready to transform your images with ease? Dive into the world of possibilities with <strong>Dev Edit</strong> today!</p>
         <a href="http://localhost:5000/">Launch Dev Edit</a>
     </footer>
 </body>

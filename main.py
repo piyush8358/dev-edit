@@ -2,9 +2,14 @@ from flask import Flask, render_template, request, flash
 import os
 import cv2 
 from werkzeug.utils import secure_filename
+from img2pdf import convert
+import shutil
+from docx import Document
+from docx.shared import Inches
+
 
 UPLOAD_FOLDER = 'uploads'
-ALLOWED_EXTENSIONS = {'webp', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
+ALLOWED_EXTENSIONS = {'webp', 'pdf', 'png', 'jpg', 'jpeg', 'word'}
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Set your secret key for flash messages
@@ -40,13 +45,19 @@ def processImage(filename, operation):
             cv2.imwrite(newfilename,img)
             return newfilename
         case "cpdf":
-            newfilename=f"static/{filename.split('.')[0]}.pdf"
-            cv2.imwrite(newfilename,img)
+             newfilename= f"static/{filename.split('.')[0]}.pdf"
+             with open(newfilename, "wb") as pdf_file:
+                pdf_file.write(convert([f"uploads/{filename}"]))
+                return newfilename
+        case "cword":
+            newfilename = f"static/{filename.split('.')[0]}.docx"
+            doc = Document()
+            doc.add_picture(f"uploads/{filename}", width=Inches(6.0))  # Adjust width as needed
+            doc.save(newfilename)
             return newfilename
-        case "cpdf":
-            newfilename=f"static/{filename.split('.')[0]}.jpeg"
-            cv2.imwrite(newfilename,img)
-            return newfilename
+        
+
+        
     pass 
 @app.route('/')
 def home():
